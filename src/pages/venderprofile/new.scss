@@ -1,0 +1,72 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        flex: 0 1;
+
+        .itemImg-Profile {
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+        margin-left: 10px;
+      }
+      table {
+        .cellWrapper {
+          display: flex;
+          align-items: center;
+
+          .image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+          }
+        }
+
+        .status {
+          padding: 5px;
+          border-radius: 5px;
+
+          &.Approved {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+          }
+          &.Pending {
+            color: goldenrod;
+            background-color: rgba(189, 189, 3, 0.103);
+          }
+        }
+      }
+    }
+  }
+}

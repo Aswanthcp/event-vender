@@ -1,0 +1,104 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+    }
+
+    .left {
+      flex: 1;
+      text-align: center;
+
+      img {
+        width: 500px;
+        height: 500px;
+        border-radius: 20%;
+        object-fit: cover;
+      }
+
+      .upload-btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        cursor: pointer;
+
+        #file {
+          position: absolute;
+          font-size: 100px;
+          right: 0;
+          top: 0;
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
+
+      .error {
+        color: red;
+        margin-top: 5px;
+      }
+    }
+
+    .right {
+      flex: 2;
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-around;
+
+        .formInput {
+          width: 40%;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .required {
+              color: red;
+            }
+          }
+
+          input[type="text"],
+          select {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid gray;
+          }
+
+          .error {
+            color: red;
+            margin-top: 5px;
+          }
+        }
+
+        button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
